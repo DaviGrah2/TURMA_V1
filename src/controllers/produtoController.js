@@ -1,4 +1,4 @@
-const produto = require("../models/produto.js");
+const produto = require("../models");
 
 class produtoController {
     async index(req, res){
