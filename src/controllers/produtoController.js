@@ -6,3 +6,4 @@ class produtoController {
         return res.status(200).json(produtos);
     }
 }
+module.exports = new produtoController();

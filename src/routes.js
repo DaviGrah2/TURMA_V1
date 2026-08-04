@@ -7,6 +7,6 @@ routes.get("/", (req, res) => {
   return res.status(200).json({ message: "Server on" });
 });
 
-routes.get("/produtos", (req, res) => produtoController.index(req, res));
+routes.get("/produtos",  produtoController.index);
 
 module.exports = routes;
