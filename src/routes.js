@@ -8,9 +8,9 @@ routes.get("/", (req, res) => {
 });
 
 routes.get("/produtos",  produtoController.index);
-routes.post("/store", produtoController.store);
-routes.put("/update/:id", produtoController.update);
-routes.delete("/destroy/:id", produtoController.destroy);
+routes.post("/produtos", produtoController.store);
+routes.put("/produtos/:id", produtoController.update);
+routes.delete("/produtos/:id", produtoController.destroy);
 
 
 module.exports = routes;
